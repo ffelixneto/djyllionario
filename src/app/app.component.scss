@@ -1,0 +1,23 @@
+nz-layout {
+  height: 100%;
+
+  nz-header {
+    display: flex;
+    align-items: center;
+
+    .spacer {
+      flex-grow: 1;
+    }
+  }
+
+  .search-box-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input[nz-input] {
+      max-width: 400px;
+    }
+  }
+}
