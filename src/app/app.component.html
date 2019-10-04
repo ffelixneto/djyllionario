@@ -1,11 +1,14 @@
 <nz-layout>
   <nz-header>
+    <div class="page-title"><h1>Djyllionario</h1></div>
     <span class="spacer"></span>
     <button nz-button nzType="default" (click)="login()">Fazer login</button>
   </nz-header>
   <nz-content>
+    <div><h1>{{textValue}}</h1></div>
     <div class="search-box-container">
-      <input nz-input placeholder="Buscar..." autofocus />
+      <!-- <input nz-input placeholder="Buscar..." autofocus /> -->
+      <input nz-input [(ngModel)]="textValue" autofocus required>
     </div>
   </nz-content>
 </nz-layout>
